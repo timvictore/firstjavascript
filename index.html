@@ -1,0 +1,74 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Sandwich</title>
+        <script type="text/javascript">
+          function myFunction() {
+            var name=document.getElementById("fName").value;
+            var drink=document.getElementById("drink").value;
+            var date=document.getElementById("date").value;
+            var time=document.getElementById("time").value;
+            var address=document.getElementById("address").value;
+            var address=document.getElementById("address").value;
+            var q=document.getElementById("sandwich").value;
+
+            alert("Hello "+ name +"\n" + 
+                "This is a summary of your order: " +"\n" +
+                "Name: "+ name +"\n"+
+                "Sandwich ordered: " + q +"\n"+
+                "Drinks: " + drink + "\n"+
+                "Delivery date: " + date +"\n"+
+                "Delivery time: " + time +"\n"+
+                "To be delivered at: " + address);
+          }
+        </script>
+        <style type="text/css">
+            div{
+                border: 7px solid maroon;
+                width: 400px;
+                background-color: #f2d089;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+      <div>
+   
+        <h1 text-align=>Sandwiches</h1>
+        <p>If you Want transaction Please fill up this Form</p>
+        <form action="demo_form.asp">
+            <input type="text" name="FirstName" maxlength="20" id="fName" placeholder="Please type your real name">&nbsp Name <br> 
+            <input type="text" name="Address" maxlength="60" id="address" placeholder="Give us your address">&nbsp Home Address <br><br> 
+
+        <strong>Google Search:</strong> <input type="search" name="googlesearch" placeholder="more info. on sandwich"><br><br>
+        <strong>List of Sandwiches</strong><br>
+        <select name="select" id="sandwich">
+                <ul>
+                    <option value="Bacon, egg and cheese sandwich">Bacon, egg and cheese sandwich<br>
+                    <option value="Beef on weck">Beef on weck<br>
+                    <option value="BLT">BLT<br>
+                    <option value="Bologna sandwich">Bologna sandwich<br>
+                    <option value="Breakfast sandwich">Breakfast sandwich<br>
+                    <option value="Cheese dream">Cheese dream<br>
+                    <option value="Cheese sandwich">Cheese sandwich<br><br>
+                </ul>
+         </select><br><br>
+            <input type="reset"><br><br>
+
+        <strong>Other order (Drinks)</strong><br>
+        <select name="select" id="drink">
+            <option value="Lemonade">Lemonade</option>
+            <option value="Lime" >Lime</option>
+            <option value="Coke">Coke</option>
+            <option value="Grape Juice">Grape Juice</option>
+        </select><br><br>
+
+        <strong>When to deliver?</strong><br>
+        Date&nbsp&nbsp<input type="date" name="delDate" min="2000-01-02" id="date"><br>
+        Time&nbsp<input type="time" name="delTime" id="time"><br><br><br>
+        <input type="submit" value="Submit" onclick="myFunction()">
+      </div>  
+    </body>
+</html>
